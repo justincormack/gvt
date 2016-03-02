@@ -1,7 +1,5 @@
 FROM golang:alpine
 
-RUN apk update && apk add git bash
+RUN apk update && apk add git
 
 RUN go get -u github.com/FiloSottile/gvt
-
-ENV PATH=$PATH:$GOPATH/bin
