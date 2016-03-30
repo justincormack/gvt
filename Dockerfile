@@ -6,4 +6,4 @@ RUN go get -u github.com/FiloSottile/gvt
 
 WORKDIR /go/src
 
-CMD ["gvt"]
+ENTRYPOINT ["gvt"]
